@@ -100,7 +100,7 @@ public final class SettingsGrid extends GridPane {
                 new Image(getBackgroundSource(), 400, 200, true, true),
                 NO_REPEAT,
                 NO_REPEAT,
-                BackgroundPosition.DEFAULT,
+                BackgroundPosition.CENTER,
                 BackgroundSize.DEFAULT
         );
     }

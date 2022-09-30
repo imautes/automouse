@@ -14,8 +14,8 @@ import static es.imaut.automouse.AutomouseWindowPositioner.position;
 import static java.util.Objects.requireNonNull;
 
 public class AutomouseApplication extends Application {
-    private static final double WIDTH = 400;
-    private static final double HEIGHT = 200;
+    private static final double WIDTH = 390;
+    private static final double HEIGHT = 190;
     private static final String TITLE = "Automouse";
 
     @Override
