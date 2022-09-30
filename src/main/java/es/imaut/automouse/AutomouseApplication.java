@@ -24,6 +24,7 @@ public class AutomouseApplication extends Application {
         stage.setResizable(false);
         stage.getIcons().add(new Image(getIconSource()));
         stage.setScene(new Scene(SettingsGrid.getInstance(), WIDTH, HEIGHT));
+        stage.setOnCloseRequest(event -> AutomouseController.getInstance().stop());
         position(stage);
         RandomMouseMover.getInstance().setStage(stage);
         TimerService.getInstance().setAction(RandomMouseMover.getInstance());
