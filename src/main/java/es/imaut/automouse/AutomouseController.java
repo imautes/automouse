@@ -28,9 +28,11 @@ public final class AutomouseController {
     }
 
     public void stop() {
-        running = false;
-        AutomouseStopEvent event = new AutomouseStopEvent();
-        SettingsGrid.getInstance().onStop(event);
-        TimerService.getInstance().onStop(event);
+        if (running) {
+            running = false;
+            AutomouseStopEvent event = new AutomouseStopEvent();
+            SettingsGrid.getInstance().onStop(event);
+            TimerService.getInstance().onStop(event);
+        }
     }
 }
